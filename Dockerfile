@@ -61,7 +61,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 RUN playwright install --with-deps chromium
 RUN playwright install-deps
-RUN apt-get install -y google-chrome-stable
 
 # Copy the application code
 COPY . .
